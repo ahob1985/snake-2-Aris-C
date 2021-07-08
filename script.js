@@ -97,7 +97,7 @@ function createFood() {
 }
 
 function checkPosition() { 
-  let positionLabel = textP2.html().lowercase();
+  let positionLabel = textP2.html().toLowerCase();
   if(positionLabel.includes("up") && snake.yDirection === 0) {
     snake.setDirection(0, -1);
   } else if(positionLabel.includes("down") && snake.yDirection === 0) {
